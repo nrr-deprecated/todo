@@ -7,4 +7,4 @@ set -o pipefail
 todo=${1:-}
 item=${2:-}
 
-exec sed -ie "$item"'s/^/x/' "$todo"
+exec sed -i .orig -e "$item"'s/^/x/' "$todo"
