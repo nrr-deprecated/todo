@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+set -u
+set -e
+set -o pipefail
+
+todo=${1:-}
+item=${2:-}
+
+exec sed -i .orig -e "$item"'s/^[0-9]/0/' "$todo"
