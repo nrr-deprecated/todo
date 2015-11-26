@@ -6,4 +6,4 @@ set -o pipefail
 
 todo=${1:-}
 
-exec awk '{print $0, "(id",NR,")"}' <"$todo" | sort
+exec awk '{print $0,"(",NR,")"}' <"$todo" | sort
