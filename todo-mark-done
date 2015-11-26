@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+set -u
+set -e
+set -o pipefail
+
+todo=${1:-}
+item=${2:-}
+
+exec sed -ie "$item"'s/^/x/' "$todo"
