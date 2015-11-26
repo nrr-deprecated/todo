@@ -4,4 +4,4 @@ set -u
 set -e
 set -o pipefail
 
-exec grep '^0'
+exec grep -E '^x?0'
