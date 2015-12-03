@@ -9,4 +9,4 @@ todo=${1:-}
 [ ! -z "$todo" ] || exit 110
 [ -f "$todo" ] || exit 110
 
-exec watch 'todo-cat '"$todo"' | todo-filter-all-undone | todo-filter-today'
+exec watch 'todo-cat '"$todo"' | todo-filter-all-undone'
