@@ -4,9 +4,12 @@ set -u
 set -e
 set -o pipefail
 
-todo=${1:-}
+todos="$@"
 
-[ ! -z "$todo" ] || exit 110
-[ -f "$todo" ] || exit 110
+[ ! -z "$todos" ] || exit 110
+for todo in $todos
+do
+	[ -f "$todo" ] || exit 110
+done
 
-exec awk '{print $0,"(",NR,")"}' <"$todo" | sort
+exec awk '{print $0,"(",NR,")"}' $todos | sort
