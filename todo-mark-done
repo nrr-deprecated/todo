@@ -10,4 +10,6 @@ item=${2:-}
 [ ! -z "$todo" ] || exit 110
 [ -f "$todo" ] || exit 110
 
+# TODO(nrr): Implement recurring tasks.
+#   echo "0 do something (hurf blurf) (due 2016-05-08) (recur in 4)" | sed -e 's/.*[^(]*(recur in \([^)]*\)).*/\1/'
 exec sed -i .orig -e "$item"'s/^/x/' "$todo"

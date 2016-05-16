@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+set -u
+set -e
+set -o pipefail
+
+# TODO(nrr): Actually implement this.
+#   echo "0 do something (hurf blurf) (due 2016-05-08) (recur in 4)" | sed -e 's/.*[^(]*(due \([^)]*\)).*/\1/'
+#   date -d 2016-05-08 +%s
+exit 0
