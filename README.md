@@ -1,6 +1,6 @@
 # todo - Tools to maintain a Randy Pausch-style "to do" list
 
-	TODO(nrr): Link to Randy Pausch's time management talk here.
+Before continuing, [watch his talk].
 
 The late Randy Pausch was a smart man who knew how to manage his time
 effectively. Most importantly, he taught us all before his rather
@@ -48,3 +48,5 @@ work as intended.
 ### `todo-postpone-until-tomorrow $TODO $ITEM`
 
 ### `todo-promote-to-today $TODO $ITEM`
+
+[watch his talk]: https://www.youtube.com/watch?v=oTugjssqOT0
